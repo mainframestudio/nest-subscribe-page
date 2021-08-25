@@ -11,81 +11,109 @@
     <!--Subscribe section-->
     <section>
       <div
-        class="
-          container
-          m-auto
-          h-screen
-          flex flex-col
-          items-center
-          text-white
-          gap-24
-        "
+        class="container-sm m-auto flex flex-col items-center text-white gap-24"
       >
-        <img src="./Nest-logo.png" alt="" width="200px" class="pt-10" />
+        <div class="w-full">
+          <img src="./Nest-logo.png" alt="" width="100px" class="pt-10" />
+        </div>
         <div
           class="
             flex flex-col
             items-center
             w-full
             bg-gray-800
-            rounded-sm
+            rounded-md
             p-12
             gap-4
+            shadow-2xl
           "
         >
-          <div class="font-semibold font-weight-700 text-5xl">
-            Get notified when we are launching
-          </div>
-          <div class="text-coolGray-200 w-3/4 py-4">
-            <p class="text-lg text-gray-300">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
-              voluptates dicta unde omnis et itaque, inventore, quam accusantium
-              neque mollitia molestiae officia voluptatem nihil recusandae!
-              Quidem molestiae perferendis sit velit?
-            </p>
-          </div>
-          <div class="flex gap-12 w-3/4">
-            <div class="flex flex-col gap-2 flex-1">
-              <label for="name" class="text-lg">Name</label>
-              <input
-                type="text"
-                placeholder="Enter your name"
-                id="name"
-                class="
-                  focus:outline-none
-                  flex-1
-                  px-2
-                  py-3
-                  rounded-sm
-                  text-black
-                "
-              />
+          <div class="flex flex-col items-center w-3/4 mx-auto gap-8">
+            <div
+              class="
+                font-semibold font-weight-700
+                text-2xl
+                md:text-3xl
+                lg:text-5xl
+              "
+            >
+              Get notified when we are launching
             </div>
-            <div class="flex flex-col gap-2 flex-1">
-              <label for="email" class="text-lg">Email</label>
-              <input
-                type="text"
-                id="email"
-                placeholder="Enter your email address"
-                class="
-                  focus:outline-none
-                  flex-1
-                  px-2
-                  py-3
-                  rounded-sm
-                  text-black
-                "
-              />
+            <div class="text-coolGray-200">
+              <p class="text-lg text-gray-300">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+                voluptates dicta unde omnis et itaque, inventore, quam
+                accusantium neque mollitia molestiae officia voluptatem nihil
+                recusandae! Quidem molestiae perferendis sit velit?
+              </p>
             </div>
-          </div>
-          <div class="flex-col justify-start w-3/4 gap-96 py-4">
-            <div class="flex items-center gap-4">
-              <input type="checkbox" id="survey" />
-              <label for="survey" class="text-lg">Survey</label>
+            <!--Name and email input fields-->
+            <div class="w-full flex flex-col lg:flex-row gap-6">
+              <div class="flex flex-col gap-2 flex-1">
+                <label for="name" class="text-lg">Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  id="name"
+                  class="
+                    focus:outline-none
+                    flex-1
+                    px-2
+                    py-3
+                    rounded-sm
+                    text-black
+                  "
+                />
+              </div>
+              <div class="flex flex-col gap-2 flex-1">
+                <label for="email" class="text-lg">Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  placeholder="Enter your email address"
+                  class="
+                    focus:outline-none
+                    flex-1
+                    px-2
+                    py-3
+                    rounded-sm
+                    text-black
+                  "
+                />
+              </div>
             </div>
-            <div class="flex items-center gap-4">
-              <input type="checkbox" id="marketing" />
-              <label for="marketing" class="text-lg">Marketing</label>
+            <!--checkboxes-->
+            <!-- <div class="w-full flex-col-start py-6">
+              <div class="flex items-center gap-4">
+                <input type="checkbox" id="survey" />
+                <label for="survey" class="text-lg">Survey</label>
+              </div>
+              <div class="flex items-center gap-4">
+                <input type="checkbox" id="marketing" />
+                <label for="marketing" class="text-lg">Marketing</label>
+              </div>
+            </div> -->
+            <div class="w-full flex flex-row-reverse">
+              <div class="w-48">
+                <button
+                  class="
+                    w-full
+                    flex
+                    items-center
+                    justify-center
+                    py-3
+                    border border-transparent
+                    font-medium
+                    rounded-md
+                    text-white
+                    bg-indigo-600
+                    hover:bg-indigo-700
+                    md:py-4 md:text-lg md:px-10
+                  "
+                >
+                  Notify me
+                </button>
+              </div>
             </div>
           </div>
         </div>
