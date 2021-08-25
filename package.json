@@ -1,0 +1,14 @@
+{
+  "name": "nest-subscribe-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+	  "build:tailwinds": "tailwind build src/style.css -o public/style.css"
+  },
+  "repository": "https://github.com/mainframestudio/nest-subscribe-page.git",
+  "author": "Bilal Khan <bilal.khan@live.com>",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^2.2.7"
+  }
+}
