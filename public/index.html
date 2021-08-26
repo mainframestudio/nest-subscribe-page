@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js"></script>
     <title>Nest Health Notes</title>
   </head>
   <body>
     <!--Subscribe section-->
     <section>
       <div
-        class="container-sm m-auto flex flex-col items-center text-white gap-24"
+        class="container m-auto flex flex-col items-center text-white gap-24"
       >
-        <div class="w-full">
+        <div class="">
           <img src="./Nest-logo.png" alt="" width="100px" class="pt-10" />
         </div>
         <div
@@ -49,12 +50,12 @@
             </div>
             <!--Name and email input fields-->
             <div class="w-full flex flex-col lg:flex-row gap-6">
-              <div class="flex flex-col gap-2 flex-1">
+              <form id="name" class="flex flex-col gap-2 flex-1">
                 <label for="name" class="text-lg">Name</label>
                 <input
                   type="text"
                   placeholder="Enter your name"
-                  id="name"
+                  name="name"
                   class="
                     focus:outline-none
                     flex-1
@@ -64,12 +65,12 @@
                     text-black
                   "
                 />
-              </div>
-              <div class="flex flex-col gap-2 flex-1">
+              </form>
+              <form id="email" class="flex flex-col gap-2 flex-1">
                 <label for="email" class="text-lg">Email</label>
                 <input
-                  type="text"
-                  id="email"
+                  type="email"
+                  name="email"
                   placeholder="Enter your email address"
                   class="
                     focus:outline-none
@@ -80,22 +81,13 @@
                     text-black
                   "
                 />
-              </div>
+              </form>
             </div>
-            <!--checkboxes-->
-            <!-- <div class="w-full flex-col-start py-6">
-              <div class="flex items-center gap-4">
-                <input type="checkbox" id="survey" />
-                <label for="survey" class="text-lg">Survey</label>
-              </div>
-              <div class="flex items-center gap-4">
-                <input type="checkbox" id="marketing" />
-                <label for="marketing" class="text-lg">Marketing</label>
-              </div>
-            </div> -->
+
             <div class="w-full flex flex-row-reverse">
               <div class="w-48">
                 <button
+                  id="notify"
                   class="
                     w-full
                     flex
